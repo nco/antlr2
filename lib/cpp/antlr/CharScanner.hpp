@@ -10,6 +10,8 @@
 
 #include <antlr/config.hpp>
 
+#include <cstdio>
+#include <cstring>
 #include <map>
 
 #ifdef HAS_NOT_CCTYPE_H
