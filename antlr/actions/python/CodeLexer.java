@@ -1,4 +1,4 @@
-// $ANTLR 2.7.5RC1 (20041124-137): "code.g" -> "CodeLexer.java"$
+// $ANTLR 2.7.7 (2006-11-01): "code.g" -> "CodeLexer.java"$
 
 package antlr.actions.python;
 

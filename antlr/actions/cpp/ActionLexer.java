@@ -1,4 +1,4 @@
-// $ANTLR : "action.g" -> "ActionLexer.java"$
+// $ANTLR 2.7.7 (2006-11-01): "action.g" -> "ActionLexer.java"$
 
 	package antlr.actions.cpp;
 
@@ -157,8 +157,8 @@ tryAgain:
 		int _saveIndex;
 		
 		{
-		int _cnt502=0;
-		_loop502:
+		int _cnt3=0;
+		_loop3:
 		do {
 			switch ( LA(1)) {
 			case '#':
@@ -176,10 +176,10 @@ tryAgain:
 					mSTUFF(false);
 				}
 			else {
-				if ( _cnt502>=1 ) { break _loop502; } else {throw new NoViableAltForCharException((char)LA(1), getFilename(), getLine(), getColumn());}
+				if ( _cnt3>=1 ) { break _loop3; } else {throw new NoViableAltForCharException((char)LA(1), getFilename(), getLine(), getColumn());}
 			}
 			}
-			_cnt502++;
+			_cnt3++;
 		} while (true);
 		}
 		if ( _createToken && _token==null && _ttype!=Token.SKIP ) {
@@ -673,7 +673,7 @@ tryAgain:
 		
 		match('"');
 		{
-		_loop599:
+		_loop100:
 		do {
 			if ((LA(1)=='\\')) {
 				mESC(false);
@@ -682,7 +682,7 @@ tryAgain:
 				matchNot('"');
 			}
 			else {
-				break _loop599;
+				break _loop100;
 			}
 			
 		} while (true);
@@ -798,7 +798,7 @@ tryAgain:
 		}
 		}
 		{
-		_loop528:
+		_loop29:
 		do {
 			if ((LA(1)==',')) {
 				_saveIndex=text.length();
@@ -867,7 +867,7 @@ tryAgain:
 				}
 			}
 			else {
-				break _loop528;
+				break _loop29;
 			}
 			
 		} while (true);
@@ -889,8 +889,8 @@ tryAgain:
 		int _saveIndex;
 		
 		{
-		int _cnt619=0;
-		_loop619:
+		int _cnt120=0;
+		_loop120:
 		do {
 			if ((LA(1)=='\r') && (LA(2)=='\n') && (true)) {
 				match('\r');
@@ -912,10 +912,10 @@ tryAgain:
 				newline();
 			}
 			else {
-				if ( _cnt619>=1 ) { break _loop619; } else {throw new NoViableAltForCharException((char)LA(1), getFilename(), getLine(), getColumn());}
+				if ( _cnt120>=1 ) { break _loop120; } else {throw new NoViableAltForCharException((char)LA(1), getFilename(), getLine(), getColumn());}
 			}
 			
-			_cnt619++;
+			_cnt120++;
 		} while (true);
 		}
 		if ( _createToken && _token==null && _ttype!=Token.SKIP ) {
@@ -971,7 +971,7 @@ tryAgain:
 		}
 		}
 		{
-		_loop585:
+		_loop86:
 		do {
 			if ((_tokenSet_9.member(LA(1))) && (true) && (true)) {
 				{
@@ -1023,7 +1023,7 @@ tryAgain:
 				}
 			}
 			else {
-				break _loop585;
+				break _loop86;
 			}
 			
 		} while (true);
@@ -1261,8 +1261,8 @@ tryAgain:
 		}
 		}
 		{
-		int _cnt559=0;
-		_loop559:
+		int _cnt60=0;
+		_loop60:
 		do {
 			if ((_tokenSet_10.member(LA(1))) && ((LA(2) >= '\u0003' && LA(2) <= '\u00ff')) && (true)) {
 				mTEXT_ARG_ELEMENT(false);
@@ -1279,10 +1279,10 @@ tryAgain:
 				}
 			}
 			else {
-				if ( _cnt559>=1 ) { break _loop559; } else {throw new NoViableAltForCharException((char)LA(1), getFilename(), getLine(), getColumn());}
+				if ( _cnt60>=1 ) { break _loop60; } else {throw new NoViableAltForCharException((char)LA(1), getFilename(), getLine(), getColumn());}
 			}
 			
-			_cnt559++;
+			_cnt60++;
 		} while (true);
 		}
 		if ( _createToken && _token==null && _ttype!=Token.SKIP ) {
@@ -1424,13 +1424,13 @@ tryAgain:
 			{
 				match('<');
 				{
-				_loop542:
+				_loop43:
 				do {
 					if ((_tokenSet_14.member(LA(1)))) {
 						matchNot('>');
 					}
 					else {
-						break _loop542;
+						break _loop43;
 					}
 					
 				} while (true);
@@ -1485,7 +1485,7 @@ tryAgain:
 			{
 				mARG(false);
 				{
-				_loop547:
+				_loop48:
 				do {
 					if ((LA(1)==',')) {
 						match(',');
@@ -1528,7 +1528,7 @@ tryAgain:
 						mARG(false);
 					}
 					else {
-						break _loop547;
+						break _loop48;
 					}
 					
 				} while (true);
@@ -1571,8 +1571,8 @@ tryAgain:
 		case '[':
 		{
 			{
-			int _cnt552=0;
-			_loop552:
+			int _cnt53=0;
+			_loop53:
 			do {
 				if ((LA(1)=='[')) {
 					match('[');
@@ -1635,10 +1635,10 @@ tryAgain:
 					match(']');
 				}
 				else {
-					if ( _cnt552>=1 ) { break _loop552; } else {throw new NoViableAltForCharException((char)LA(1), getFilename(), getLine(), getColumn());}
+					if ( _cnt53>=1 ) { break _loop53; } else {throw new NoViableAltForCharException((char)LA(1), getFilename(), getLine(), getColumn());}
 				}
 				
-				_cnt552++;
+				_cnt53++;
 			} while (true);
 			}
 			break;
@@ -1745,17 +1745,17 @@ tryAgain:
 		int _saveIndex;
 		
 		{
-		int _cnt610=0;
-		_loop610:
+		int _cnt111=0;
+		_loop111:
 		do {
 			if (((LA(1) >= '0' && LA(1) <= '9'))) {
 				mDIGIT(false);
 			}
 			else {
-				if ( _cnt610>=1 ) { break _loop610; } else {throw new NoViableAltForCharException((char)LA(1), getFilename(), getLine(), getColumn());}
+				if ( _cnt111>=1 ) { break _loop111; } else {throw new NoViableAltForCharException((char)LA(1), getFilename(), getLine(), getColumn());}
 			}
 			
-			_cnt610++;
+			_cnt111++;
 		} while (true);
 		}
 		if ( _createToken && _token==null && _ttype!=Token.SKIP ) {
@@ -1797,7 +1797,7 @@ tryAgain:
 		}
 		}
 		{
-		_loop580:
+		_loop81:
 		do {
 			if ((_tokenSet_20.member(LA(1))) && (_tokenSet_21.member(LA(2))) && ((LA(3) >= '\u0003' && LA(3) <= '\u00ff'))) {
 				{
@@ -1882,7 +1882,7 @@ tryAgain:
 				mARG(false);
 			}
 			else {
-				break _loop580;
+				break _loop81;
 			}
 			
 		} while (true);
@@ -1997,26 +1997,26 @@ tryAgain:
 			
 			}
 			{
-			_loop568:
+			_loop69:
 			do {
 				if ((_tokenSet_24.member(LA(1))) && ((LA(2) >= '\u0003' && LA(2) <= '\u00ff')) && ((LA(3) >= '\u0003' && LA(3) <= '\u00ff'))) {
 					mTEXT_ARG(false);
 					{
-					_loop567:
+					_loop68:
 					do {
 						if ((LA(1)==',')) {
 							match(',');
 							mTEXT_ARG(false);
 						}
 						else {
-							break _loop567;
+							break _loop68;
 						}
 						
 					} while (true);
 					}
 				}
 				else {
-					break _loop568;
+					break _loop69;
 				}
 				
 			} while (true);
@@ -2046,8 +2046,8 @@ tryAgain:
 		case '[':
 		{
 			{
-			int _cnt573=0;
-			_loop573:
+			int _cnt74=0;
+			_loop74:
 			do {
 				if ((LA(1)=='[')) {
 					match('[');
@@ -2087,10 +2087,10 @@ tryAgain:
 					match(']');
 				}
 				else {
-					if ( _cnt573>=1 ) { break _loop573; } else {throw new NoViableAltForCharException((char)LA(1), getFilename(), getLine(), getColumn());}
+					if ( _cnt74>=1 ) { break _loop74; } else {throw new NoViableAltForCharException((char)LA(1), getFilename(), getLine(), getColumn());}
 				}
 				
-				_cnt573++;
+				_cnt74++;
 			} while (true);
 			}
 			break;
@@ -2132,17 +2132,17 @@ tryAgain:
 		int _saveIndex;
 		
 		{
-		int _cnt613=0;
-		_loop613:
+		int _cnt114=0;
+		_loop114:
 		do {
 			if (((LA(1) >= '0' && LA(1) <= '9')) && (_tokenSet_25.member(LA(2))) && (true)) {
 				mDIGIT(false);
 			}
 			else {
-				if ( _cnt613>=1 ) { break _loop613; } else {throw new NoViableAltForCharException((char)LA(1), getFilename(), getLine(), getColumn());}
+				if ( _cnt114>=1 ) { break _loop114; } else {throw new NoViableAltForCharException((char)LA(1), getFilename(), getLine(), getColumn());}
 			}
 			
-			_cnt613++;
+			_cnt114++;
 		} while (true);
 		}
 		{
@@ -2155,13 +2155,13 @@ tryAgain:
 		else if ((LA(1)=='.')) {
 			match('.');
 			{
-			_loop616:
+			_loop117:
 			do {
 				if (((LA(1) >= '0' && LA(1) <= '9')) && (_tokenSet_26.member(LA(2))) && (true)) {
 					mDIGIT(false);
 				}
 				else {
-					break _loop616;
+					break _loop117;
 				}
 				
 			} while (true);
@@ -2188,15 +2188,15 @@ tryAgain:
 		
 		match("//");
 		{
-		_loop590:
+		_loop91:
 		do {
 			// nongreedy exit test
-			if ((LA(1)=='\n'||LA(1)=='\r') && (true) && (true)) break _loop590;
+			if ((LA(1)=='\n'||LA(1)=='\r') && (true) && (true)) break _loop91;
 			if (((LA(1) >= '\u0003' && LA(1) <= '\u00ff')) && ((LA(2) >= '\u0003' && LA(2) <= '\u00ff')) && (true)) {
 				matchNot(EOF_CHAR);
 			}
 			else {
-				break _loop590;
+				break _loop91;
 			}
 			
 		} while (true);
@@ -2231,10 +2231,10 @@ tryAgain:
 		
 		match("/*");
 		{
-		_loop594:
+		_loop95:
 		do {
 			// nongreedy exit test
-			if ((LA(1)=='*') && (LA(2)=='/') && (true)) break _loop594;
+			if ((LA(1)=='*') && (LA(2)=='/') && (true)) break _loop95;
 			if ((LA(1)=='\r') && (LA(2)=='\n') && ((LA(3) >= '\u0003' && LA(3) <= '\u00ff'))) {
 				match('\r');
 				match('\n');
@@ -2252,7 +2252,7 @@ tryAgain:
 				matchNot(EOF_CHAR);
 			}
 			else {
-				break _loop594;
+				break _loop95;
 			}
 			
 		} while (true);

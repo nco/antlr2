@@ -1,4 +1,4 @@
-// $ANTLR : "tokdef.g" -> "ANTLRTokdefLexer.java"$
+// $ANTLR 2.7.7 (2006-11-01): "tokdef.g" -> "ANTLRTokdefLexer.java"$
  package antlr; 
 import java.io.InputStream;
 import antlr.TokenStreamException;
@@ -200,7 +200,7 @@ tryAgain:
 		
 		match("//");
 		{
-		_loop234:
+		_loop12:
 		do {
 			if ((_tokenSet_0.member(LA(1)))) {
 				{
@@ -208,7 +208,7 @@ tryAgain:
 				}
 			}
 			else {
-				break _loop234;
+				break _loop12;
 			}
 			
 		} while (true);
@@ -254,7 +254,7 @@ tryAgain:
 		
 		match("/*");
 		{
-		_loop239:
+		_loop17:
 		do {
 			if ((LA(1)=='*') && (_tokenSet_1.member(LA(2)))) {
 				match('*');
@@ -268,7 +268,7 @@ tryAgain:
 				matchNot('*');
 			}
 			else {
-				break _loop239;
+				break _loop17;
 			}
 			
 		} while (true);
@@ -328,7 +328,7 @@ tryAgain:
 		
 		match('"');
 		{
-		_loop245:
+		_loop23:
 		do {
 			if ((LA(1)=='\\')) {
 				mESC(false);
@@ -337,7 +337,7 @@ tryAgain:
 				matchNot('"');
 			}
 			else {
-				break _loop245;
+				break _loop23;
 			}
 			
 		} while (true);
@@ -553,7 +553,7 @@ tryAgain:
 		}
 		}
 		{
-		_loop258:
+		_loop36:
 		do {
 			switch ( LA(1)) {
 			case 'a':  case 'b':  case 'c':  case 'd':
@@ -592,7 +592,7 @@ tryAgain:
 			}
 			default:
 			{
-				break _loop258;
+				break _loop36;
 			}
 			}
 		} while (true);
@@ -610,17 +610,17 @@ tryAgain:
 		int _saveIndex;
 		
 		{
-		int _cnt261=0;
-		_loop261:
+		int _cnt39=0;
+		_loop39:
 		do {
 			if (((LA(1) >= '0' && LA(1) <= '9'))) {
 				mDIGIT(false);
 			}
 			else {
-				if ( _cnt261>=1 ) { break _loop261; } else {throw new NoViableAltForCharException((char)LA(1), getFilename(), getLine(), getColumn());}
+				if ( _cnt39>=1 ) { break _loop39; } else {throw new NoViableAltForCharException((char)LA(1), getFilename(), getLine(), getColumn());}
 			}
 			
-			_cnt261++;
+			_cnt39++;
 		} while (true);
 		}
 		if ( _createToken && _token==null && _ttype!=Token.SKIP ) {

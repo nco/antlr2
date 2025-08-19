@@ -1,4 +1,4 @@
-// $ANTLR : "action.g" -> "ActionLexer.java"$
+// $ANTLR 2.7.7 (2006-11-01): "action.g" -> "ActionLexer.java"$
 
 	package antlr.actions.cpp;
 

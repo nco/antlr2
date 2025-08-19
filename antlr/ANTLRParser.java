@@ -1,4 +1,4 @@
-// $ANTLR 2.7.3rc3: "antlr.g" -> "ANTLRParser.java"$
+// $ANTLR 2.7.7 (2006-11-01): "antlr.g" -> "ANTLRParser.java"$
 
 package antlr;
 
@@ -303,7 +303,7 @@ public ANTLRParser(ParserSharedInputState state) {
 					synPredMatched13 = false;
 				}
 				rewind(_m13);
-				inputState.guessing--;
+inputState.guessing--;
 			}
 			if ( synPredMatched13 ) {
 				lexerSpec(doc);
@@ -326,7 +326,7 @@ public ANTLRParser(ParserSharedInputState state) {
 						synPredMatched15 = false;
 					}
 					rewind(_m15);
-					inputState.guessing--;
+inputState.guessing--;
 				}
 				if ( synPredMatched15 ) {
 					treeParserSpec(doc);

@@ -1,4 +1,4 @@
-// $ANTLR : "tokdef.g" -> "ANTLRTokdefParser.java"$
+// $ANTLR 2.7.7 (2006-11-01): "tokdef.g" -> "ANTLRTokdefParser.java"$
  package antlr; 
 import antlr.TokenBuffer;
 import antlr.TokenStreamException;
@@ -116,13 +116,13 @@ public ANTLRTokdefParser(ParserSharedInputState state) {
 			name = LT(1);
 			match(ID);
 			{
-			_loop225:
+			_loop3:
 			do {
 				if ((LA(1)==ID||LA(1)==STRING)) {
 					line(tm);
 				}
 				else {
-					break _loop225;
+					break _loop3;
 				}
 				
 			} while (true);
@@ -130,8 +130,7 @@ public ANTLRTokdefParser(ParserSharedInputState state) {
 		}
 		catch (RecognitionException ex) {
 			reportError(ex);
-			consume();
-			consumeUntil(_tokenSet_0);
+			recover(ex,_tokenSet_0);
 		}
 	}
 	
@@ -213,8 +212,7 @@ public ANTLRTokdefParser(ParserSharedInputState state) {
 		}
 		catch (RecognitionException ex) {
 			reportError(ex);
-			consume();
-			consumeUntil(_tokenSet_1);
+			recover(ex,_tokenSet_1);
 		}
 	}
 	

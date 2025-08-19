@@ -1,4 +1,4 @@
-// $ANTLR : "tokdef.g" -> "ANTLRTokdefParser.java"$
+// $ANTLR 2.7.7 (2006-11-01): "tokdef.g" -> "ANTLRTokdefParser.java"$
  package antlr; 
 public interface ANTLRTokdefParserTokenTypes {
 	int EOF = 1;

@@ -298,7 +298,10 @@ protected:
 		{
 #ifdef ANTLR_CXX_SUPPORTS_UNCAUGHT_EXCEPTION
 			// Only give trace if there's no uncaught exception..
-			if(!ANTLR_USE_NAMESPACE(std)uncaught_exception())
+		  // 20250819: csz Update function name due to compilation failure
+		  // Presumably the C++ or Java API changed recently
+		  //if(!ANTLR_USE_NAMESPACE(std)uncaught_exception())
+		  if(!ANTLR_USE_NAMESPACE(std)uncaught_exceptions())
 #endif
 				parser->traceOut(text);
 		}
